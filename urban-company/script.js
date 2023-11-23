@@ -17,3 +17,11 @@ function showdivs(n) {
   }
   x[slideindex - 1].style.display = "block";
 }
+var flkty = new Flickity(".carousel", {
+  wrapAround: true,
+  autoPlay: false,
+  imagesLoaded: true,
+  contain: true,
+  friction: 0.01, // Set a very low friction value
+  pageDots: false, // Hide the page dots
+});
