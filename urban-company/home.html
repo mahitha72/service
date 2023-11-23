@@ -107,46 +107,46 @@
     </header>
     <main>
         <div class="slideshow">
-            <img class="myslides" src="./Asserts/img1.jpg" >
+            <img class="myslides" src="./Asserts/img1.jpg">
             <img class="myslides" src="./Asserts/img2.jpg">
-            <img class="myslides" src="./Asserts/img3.jpg" >
+            <img class="myslides" src="./Asserts/img3.jpg">
             <img class="myslides" src="./Asserts/img4.jpg">
-            <button  class="arrowleft" onclick="plusDivs(-1)">&#10094;</button>
-            <button  class="arrowright" onclick="plusDivs(1)">&#10095;</button>
+            <button class="arrowleft" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="arrowright" onclick="plusDivs(1)">&#10095;</button>
         </div>
         <div class="service">
             <b>Services & Repair</b><br><br>
             <p>Chimney Installation | Geyser Installation | Instant Water Heater Repair |
-                 LED TV installation | Geyser Repair | Chimney Service | Geyser Repair and Service | 
-                 LED TV repair | Island Chimney Installation | Single Door Refrigerator Repair| Double Door
-                  Refrigerator Repair | Side by Side Door Refrigerator Install & repair | Window AC Servicing |
-                   Mini Bar Refrigerator Repair| Air Cooler Repair | Automatic Washing Machine Repairs | Semi
-                    Automatic Washing Machine Repairs  | Vacuum Cleaner Repair  | Bar  Refrigerator Repair |
-                    Split AC Installation | Automatic Washing Machine Service  | Window AC Installation | LED 
-                    TV Panel repair | Chimney Deep Clean | Refrigerator gas filling
+                LED TV installation | Geyser Repair | Chimney Service | Geyser Repair and Service |
+                LED TV repair | Island Chimney Installation | Single Door Refrigerator Repair| Double Door
+                Refrigerator Repair | Side by Side Door Refrigerator Install & repair | Window AC Servicing |
+                Mini Bar Refrigerator Repair| Air Cooler Repair | Automatic Washing Machine Repairs | Semi
+                Automatic Washing Machine Repairs | Vacuum Cleaner Repair | Bar Refrigerator Repair |
+                Split AC Installation | Automatic Washing Machine Service | Window AC Installation | LED
+                TV Panel repair | Chimney Deep Clean | Refrigerator gas filling
             </p>
         </div>
-<script>       
-var slideindex=1;
-showdivs(1);
-function plusDivs(n){
-    showdivs(slideindex +=n);
-}
-function showdivs(n){
-    var i;
-    var x=document.getElementsByClassName("myslides");
-    if(n>x.length){slideindex=1}
-    if(n<1){slideindex=x.length}
-    for(i=0;i<x.length;i++){
-        x[i].style.display="none";
-    }
-    x[slideindex-1].style.display ="block";
-}
-</script>
-    
-    <!-- /* <footer>
-        
-    // </footer>*/ --> -->
+        <script>
+            var slideindex = 1;
+            showdivs(1);
+            function plusDivs(n) {
+                showdivs(slideindex += n);
+            }
+            function showdivs(n) {
+                var i;
+                var x = document.getElementsByClassName("myslides");
+                if (n > x.length) { slideindex = 1 }
+                if (n < 1) { slideindex = x.length }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideindex - 1].style.display = "block";
+            }
+        </script>
+
+        /* <footer>
+
+            // </footer>*/
 </body>
 
 </html>
