@@ -10,7 +10,9 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+
 </head>
 
 <body>
@@ -114,6 +116,52 @@
             <button class="arrowleft" onclick="plusDivs(-1)">&#10094;</button>
             <button class="arrowright" onclick="plusDivs(1)">&#10095;</button>
         </div>
+        <div class="icon-slider">
+            <div class="carousel" data-flickity='{ "wrapAround": false, "autoPlay": false, "imagesLoaded":true }'>
+                <div class="carousel-cell">
+                    <img src="Asserts/filtration.png" alt="A/C">
+                </div>
+                <div class="carousel-cell">
+                    <img src="Asserts/air-conditioner.png" alt="A/C">
+                </div>
+                <div class="carousel-cell">
+                    <img src="Asserts/refrigerator.png" alt="A/C">
+                </div>
+                <div class="carousel-cell">
+                    <img src="Asserts/washing-machine.png" alt="A/C">
+                </div>
+                <div class="carousel-cell">
+                    <img src="Asserts/microwave.png" alt="A/C">
+                </div>
+                <div class="carousel-cell">
+                    <img src="Asserts/smart-tv.png" alt="A/C">
+                </div>
+                <div class="carousel-cell">
+                    <img src="Asserts/food.png" alt="A/C">
+                </div>
+                <div class="carousel-cell">
+                    <img src="Asserts/water-boiler.png" alt="A/C">
+                </div>
+                <div class="carousel-cell">
+                    <img src="Asserts/dishwasher.png" alt="A/C">
+                </div>
+                <div class="carousel-cell">
+                    <img src="Asserts/air-cooler.png" alt="A/C">
+                </div>
+                <div class="carousel-cell">
+                    <img src="Asserts/fan.png" alt="A/C">
+                </div>
+                <div class="carousel-cell">
+                    <img src="Asserts/stationary-bike.png" alt="A/C">
+                </div>
+                <div class="carousel-cell">
+                    <img src="Asserts/Dehumidifier.png" alt="A/C">
+                </div>
+                <div class="carousel-cell">
+                    <img src="Asserts/blender.png" alt="A/C">
+                </div>
+            </div>
+        </div>
         <div class="service">
             <b>Services & Repair</b><br><br>
             <p>Chimney Installation | Geyser Installation | Instant Water Heater Repair |
@@ -126,27 +174,10 @@
                 TV Panel repair | Chimney Deep Clean | Refrigerator gas filling
             </p>
         </div>
-        <script>
-            var slideindex = 1;
-            showdivs(1);
-            function plusDivs(n) {
-                showdivs(slideindex += n);
-            }
-            function showdivs(n) {
-                var i;
-                var x = document.getElementsByClassName("myslides");
-                if (n > x.length) { slideindex = 1 }
-                if (n < 1) { slideindex = x.length }
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                }
-                x[slideindex - 1].style.display = "block";
-            }
-        </script>
-
-        /* <footer>
-
-            // </footer>*/
+        <footer></footer>
+        <script src="script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 
 </html>
