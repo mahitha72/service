@@ -187,3 +187,19 @@
 .carousel-cell:before {
   display: block;
 }
+.flex-container{
+  display: flex;
+  background-color: none;
+  background-color:aliceblue;
+  margin-top: 0px;
+}
+.flex-container>div{
+  margin: 80px;
+  padding: 20px;
+  color: black;
+}
+.heading{
+  color:  solid black;
+  word-spacing: 150px;
+  background-color: aliceblue;
+}
