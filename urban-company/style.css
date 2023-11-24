@@ -187,12 +187,22 @@
 }
 .carousel-cell {
   padding: 8px 21px;
-  border: 1px solid #d9d9d9;
+  /* border: 1px solid #d9d9d9; */
   border-radius: 10px;
   margin: 0px 13px;
   text-align: center;
-  height: 67px;
-  width: 93px;
+  height: 100px;
+  width: 120px;
+}
+.new
+{
+  padding: 8px 21px;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+}
+.carousel-cell{
+  height: 100px;
+  width: 120px;
 }
 .flickity-prev-next-button {
   top: 50%;
