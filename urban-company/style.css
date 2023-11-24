@@ -218,20 +218,23 @@
 }
 .flex-container {
   display: flex;
-  background-color: none;
-  background-color: aliceblue;
   margin-top: 0px;
 }
 .flex-container > div {
-  margin: 80px;
+  margin: 50px;
   padding: 20px;
   color: black;
 }
 .heading {
   color: solid black;
   word-spacing: 150px;
-  background-color: aliceblue;
+  margin-top: 90px;
+  margin-left: 103px;
+  
 }
 .flickity-page-dots {
   display: none;
+}
+.footer{
+  background-color: aliceblue;
 }
