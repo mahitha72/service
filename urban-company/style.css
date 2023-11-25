@@ -238,3 +238,22 @@
 .footer{
   background-color: aliceblue;
 }
+/* .flex-container .d{
+ display: flex;
+} */
+/* .d > dd {
+  margin: 30px;
+  padding: 50px;
+} */
+/* .gridcontainer{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.grid-item{
+  border: none;
+  padding: 20px;
+  width: 25%;
+  height: 10vh;
+  align-items: center;
+} */
