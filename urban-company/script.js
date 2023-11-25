@@ -25,3 +25,8 @@ var flkty = new Flickity(".carousel", {
   friction: 0.01, // Set a very low friction value
   pageDots: false, // Hide the page dots
 });
+function myfunction()
+{
+  const value1 = document.getElementById("warranty").value
+  localStorage.setItem("v1",value1)
+}

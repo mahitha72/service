@@ -108,34 +108,56 @@
         </section>
         <div class="medium">
             <div class="drop_box">
-                <select name="category" id="drop_box_1" disabled>
-                    <option value="#">xxxxx</option>
-                </select>
+                <p id="appliancce" class="drop_menu">xxxx</p>
                 <span>Appliance</span>
             </div>
             <div class="drop_box">
-                <select name="brand" id="drop_box_2" disabled>
-                    <option value="#">xxxxx</option>
-
-                </select>
+                    <p id="brand" class="drop_menu">xxxxx</p>
                 <span>Brand</span>
             </div>
             <div class="drop_box">
-                <select name="sub_category" id="drop_box_3" disabled>
-                    <option value="#">xxxxx</option>
-
-                </select>
+                <p id="sub" class="drop_menu"> xxxxx</p>
                 <span>Sub Category</span>
             </div>
             <div class="drop_box">
-                <select name="warranty" id="drop_box_4" disabled>
-                    <option value="#">xxxxx</option>
-
-                </select>
+                <p id="warn" class="drop_menu">xxxxxx</p>
                 <span>Warranty</span>
             </div>
         </div>
+       
+            <div class="products-plans">
+                <article class="products-plan-single" data-id="640a34e81e81e9fdcee8dd4e">
+                    <div class="flexible-center">
+                        <div class="products-plan-text">
+                            <div class="products-plan-heading">
+                                Service By Brand </div>
+                            <div class="products-plan-price"><s><small>Rs. 0</small></s> Rs. <b>0</b></div>
+                            <div class="products-plan-description">
+                                <ul>
+                                    <li>Price includes visit &amp; diagnosis</li>
+                                    <li>Spare part rates applicable as per rate card</li>
+                                </ul>
+                            </div>
+                        </div>
+        
+                        <div class="products-plan-image">
+                            <img src="" alt="">
+                            <button type="button" class="secondary-button" data-bs-toggle="modal"
+                                data-id="640a34e81e81e9fdcee8dd4e" data-bs-target="#addon-plans-included">
+                                Select
+                            </button>
+                        </div>
+                    </div>
+                </article>
+        
+        
+        
+            </div>
+        </div>
     </main>
-</body>
+    <script>
+        document.getElementById("warn").innerHTML = localStorage.getItem("v1");
+
+    </script>
 
 </html>

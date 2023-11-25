@@ -5,7 +5,7 @@
   font-size: 23px;
 }
 .medium {
-  height: 60vh;
+  height: 340px;
   position: relative;
   border: 5px solid transparent;
   margin-top: 20px;
@@ -16,55 +16,61 @@
   background: #fff;
   box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.08);
   padding: 30px 20px;
-  width: 300px;
+  width: 310px;
   padding-left: 0px;
   border-radius: 10px;
   z-index: 2;
-  top: 0px;
+  top: -50px;
+  left: 70px;
+  
 }
 .drop_box {
-  border: 1px solid transparent;
-  margin-top: 0px;
-  margin-bottom: 5px;
-  text-align: center;
-  flex-grow: 1;
-  padding-top: 5px;
-  border-radius: 3vh;
-  padding-left: 4vh;
+  border-radius: 5px;
+  border: 1px solid #656565;
+  width: 270px;
+  height: 50px;
+  margin-bottom: 19px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .drop_box > span {
-  position: absolute;
+  position: relative;
   color: #9c57cc;
   font-size: 11px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   padding: 8px 15px;
-  left: 80px;
   font-family: "Montserrat", sans-serif;
+  top: -64px;
+  left: -2px;
 }
-#drop_box_1,
-#drop_box_4,
-#drop_box_3,
-#drop_box_2 {
+
+.drop_menu {
   width: 100%;
   padding: 19px 11px 8px 11px;
   margin-bottom: 20px;
-  border-radius: 5px;
-  border: 1px solid #656565;
+  color: #6d6d6d;
 }
-.wallpaper_1{
-    padding-top: 125px;
-    padding-bottom: 125px; 
-    text-align: center;
-    justify-content: center;
-    background-image:url(./Asserts/Group456.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.wallpaper_1 {
+  padding-top: 125px;
+  padding-bottom: 125px;
+  text-align: center;
+  justify-content: center;
+  background-image: url(./Asserts/Group456.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-.wallpaper_1 > h1{
-    color: #ffffff;
-    font-size: 45px;
-    font-weight: 700;
+.wallpaper_1 > h1 {
+  color: #ffffff;
+  font-size: 45px;
+  font-weight: 700;
+}
+.product-plans{
+   border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-top: 30px;
 }

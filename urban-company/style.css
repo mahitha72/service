@@ -157,12 +157,67 @@
   padding: 60px;
   font-size: 25px;
 }
-.steps {
+.steps{
   padding: 60px 40px 80px 40px;
   background-color: #fff;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   border: 1px solid black;
+  display: flex;
+  position: absolute;
+      top: 380px;
+    width: 712px;
+    height: 246px;
+    left: 300px;
+    visibility: visible;
+}
+.categories_button{
+  text-align: center;
+  margin-top: -30px;
+}
+.categories_button a {
+    background: #acacac;
+    border-radius: 100px;
+    padding: 15px 37px;
+    color: #ffffff !important;
+    border: 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    margin: auto;
+    z-index: 99;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+}
+.second-step > div {
+  padding-top: 20px;
+    width: 49%;
+    margin-right: 20px;
+    position: relative;
+}
+.second-step select{
+    height: 50px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 19px 11px 8px 11px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 100%;
+    color: #111111a2;
+}
+.second-step span {
+    position: absolute;
+    color: black;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 8px 15px;
+    left: 0;
 }
 .slider {
   position: relative;
