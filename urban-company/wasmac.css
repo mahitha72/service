@@ -22,7 +22,6 @@
   z-index: 2;
   top: -50px;
   left: 70px;
-  
 }
 .drop_box {
   border-radius: 5px;
@@ -67,10 +66,85 @@
   font-size: 45px;
   font-weight: 700;
 }
-.product-plans{
-   border-radius: 10px;
-    background: #fff;
-    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    margin-top: 30px;
+.products-plans {
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-top: 30px;
+  width: 630px;
+  height: 215px;
+  left: 360px;
+  position: absolute;
+  bottom: 120px;
+  font-family: "Montserrat", "sans-serif";
+}
+
+.products-plan-text {
+  width: 75%;
+}
+.products-plan-heading,
+.products-plan-text,
+.products-plans {
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  padding-right: 10px;
+}
+.products-plan-description ul {
+  color: #424242;
+  font-size: 15px;
+  font-weight: 500;
+  padding-left: 17px;
+  padding-top: 40px;
+}
+.products-plan-price {
+  margin-top: 10px;
+}
+.secondary-button {
+  position: relative;
+  bottom: 50px;
+  border-radius: 100px;
+  background: #f7941d;
+  padding: 10px 15px;
+  border: 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  left: 400px;
+  right: 0;
+  width: 75px;
+  cursor: pointer;
+}
+.product-plans-sidebar-faq {
+  position: absolute;
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.08);
+  padding: 30px 20px;
+  height: 340px;
+  margin-top: 20px;
+  margin-left: 50px;
+  background: #fff;
+  width: 310px;
+  border-radius: 10px;
+  z-index: 3;
+  top: 730px;
+  left: 70px;
+}
+.product-plans-sidebar-faq h3 {
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.product-promotional-banner {
+  position: relative;
+  text-align: center;
+  padding-bottom: 20px;
+  bottom: -400px;
+}
+.img-fluid {
+  
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
 }

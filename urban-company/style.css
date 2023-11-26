@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+ font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
 }
 .navbar {
@@ -102,15 +102,24 @@
   height: 50px;
 }
 .log {
+  position: relative;
+  bottom: 5px;
   padding: 15px 15px 10px;
-  margin: 5px auto 0px 50px;
-  height: 50px;
-  border: 1px solid black;
-  border-radius: 4px;
+  margin: 5px 44px 0px 50px;
+  height: 40px;
+ 
+  
 }
 #thirdname {
-  text-decoration: none;
-  color: #000;
+  border-radius: 100px;
+    background: black;
+    padding: 7px 15px;
+    border: 0;
+  
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+
 }
 .arrowleft,
 .arrowright {
