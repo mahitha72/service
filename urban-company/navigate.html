@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Navigation with Radio Buttons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        input[type="radio"] {
+            margin-right: 8px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Select type of user:</h2>
+        <div>
+            <input type="radio" id="page1" name="page" value="page1">
+            <label for="page1">Customer</label>
+        </div>
+        <div>
+            <input type="radio" id="page2" name="page" value="page2">
+            <label for="page2">Service Provider</label>
+        </div>
+        <button onclick="navigate()">Go to Selected type</button>
+    </div>
+
+    <script>
+        function navigate() {
+            // Get the selected radio button
+            const selectedPage = document.querySelector('input[name="page"]:checked');
+
+            if (selectedPage) {
+                // Redirect to the corresponding page based on the selected radio button value
+                const pageValue = selectedPage.value;
+                switch (pageValue) {
+                    case 'page1':
+                        window.location.href = 'login.html';
+                        break;
+                    case 'page2':
+                        window.location.href = 'p_signup.html';
+                        break;
+                   
+                    // Add more cases for additional pages if needed
+                    default:
+                        console.log('Invalid page selection');
+                }
+            } else {
+                alert('Please select a page before clicking "Go to Selected Page"');
+            }
+        }
+    </script>
+</body>
+</html>
+
