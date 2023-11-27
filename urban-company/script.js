@@ -30,3 +30,23 @@ function myfunction()
   const value1 = document.getElementById("warranty").value
   localStorage.setItem("v1",value1)
 }
+function updateTotalCost() {
+  // Get the item count and calculate the total cost
+  const itemCount = document.getElementById("itemCount").value;
+  const costPerItem = 50; // Replace with your actual cost per item
+  const totalCost = itemCount * costPerItem;
+
+ // Update the total cost in the HTML
+  document.getElementById("totalCost").innerText = totalCost;
+
+  // Calculate and update payment summary
+  const subTotal = totalCost;
+  const tax = 0.1 * subTotal; // Assuming 10% tax
+  const fee = 5; // Assuming a fixed fee
+  const grandTotal = subTotal + tax + fee;
+
+  document.getElementById("subTotal").innerText = subTotal;
+  document.getElementById("tax").innerText = tax;
+  document.getElementById("fee").innerText = fee;
+  document.getElementById("grandTotal").innerText = grandTotal;
+}
