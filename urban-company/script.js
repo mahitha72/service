@@ -50,3 +50,6 @@ function updateTotalCost() {
   document.getElementById("fee").innerText = fee;
   document.getElementById("grandTotal").innerText = grandTotal;
 }
+document.getElementById("filtration-cell").addEventListener("click", function () {
+  document.getElementById("")
+});

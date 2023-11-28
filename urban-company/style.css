@@ -10,7 +10,7 @@
   color: #000;
   display: flex;
   position: sticky;
-  width: 100vw;
+  width: auto;
   box-shadow: 2px -4px 11px 0px black;
   justify-content: space-between;
 }
@@ -180,7 +180,7 @@
   width: 843px;
   height: 246px;
   left: 300px;
-  visibility: hidden;
+  visibility: visible;
 }
 .categories_button{
   text-align: center;
@@ -268,8 +268,8 @@
   border-radius: 10px;
 }
 .carousel-cell{
-  height: 100px;
-  width: 120px;
+  height: 150px;
+  width: 150px;
 }
 .flickity-prev-next-button {
   top: 50%;
@@ -499,4 +499,10 @@ width: 50vw;
 }
 .d{
   display: inline;
+}
+#filtration-cell{
+  cursor: pointer;
+}
+#filtration-cell:hover{
+  border: 2px solid rgba(0, 0, 0, 0.658);
 }
