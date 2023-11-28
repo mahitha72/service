@@ -500,9 +500,3 @@ width: 50vw;
 .d{
   display: inline;
 }
-#filtration-cell{
-  cursor: pointer;
-}
-#filtration-cell:hover{
-  border: 2px solid rgba(0, 0, 0, 0.658);
-}
