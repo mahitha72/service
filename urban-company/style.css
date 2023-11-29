@@ -285,20 +285,18 @@
 }
 .flex-container {
   display: flex;
-  margin-top: 0px;
   flex-wrap: wrap;
 }
 .flex-container > div {
   margin: 50px;
+  margin-top: 10px;
   padding: 20px;
   color: black;
 }
 .heading {
   color: solid black;
   word-spacing: 150px;
-  margin-top: 90px;
-  margin-left: 103px;
-  
+  margin-bottom: 20px;  
 }
 .flickity-page-dots {
   display: none;
@@ -505,4 +503,10 @@ width: 50vw;
 }
 #filtration-cell:hover{
   border: 2px solid rgba(0, 0, 0, 0.658);
+}
+.footer-logo{
+  width: 90px;
+  height: 50px;
+  margin-left: 60px;
+  margin-top: 50px;
 }
