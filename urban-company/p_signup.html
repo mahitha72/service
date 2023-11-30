@@ -64,16 +64,25 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            height: 606px;
         }
 
-        .container {
+        .container-1 {
             width: 300px;
             padding: 20px;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
-            margin-bottom: 20px; /* Added margin to separate containers */
+            margin-bottom: 25px; /* Added margin to separate containers */
+        }
+
+        .container-2 {
+            width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-bottom: -203px; /* Added margin to separate containers */
         }
 
         .form-group {
@@ -112,7 +121,7 @@
 </head>
 <body>
     <!-- Login Form -->
-    <div class="container" id="loginForm">
+    <div class="container-1" id="loginForm">
         <h2>Login</h2>
         <div class="form-group">
             <label for="loginUsername">Username:</label>
@@ -126,7 +135,7 @@
         <p>Don't have an account? <a href="#" onclick="toggleForm()">Sign Up</a></p>
     </div>
     <!-- Sign Up Form -->
-<div class="container" id="signUpForm" style="display: none;">
+<div class="container-2" id="signUpForm" style="display: none;">
     <h2>Professional Sign Up</h2>
     <div class="form-group">
         <label for="fullName">Full Name:</label>
@@ -189,6 +198,8 @@
     <script>
         function login() {
             console.log('Login button clicked');
+            clearSignUpForm();
+            showLoginForm();
         }
 
         function toggleForm() {
@@ -213,7 +224,41 @@
         }
         function redirectToLogin() {
             console.log('Redirecting to login page...');
+            clearSignUpForm();
+            showLoginForm();
         }
+
+        function redirectToSignup() {
+            console.log('Redirecting to signup page...');
+            clearSignUpForm();
+            showSignUpForm();
+        }
+
+        function clearSignUpForm() {
+            const signUpForm = document.getElementById('signUpForm');
+            const formElements = signUpForm.getElementsByTagName('input');
+
+            for (let i = 0; i < formElements.length; i++) {
+                formElements[i].value = '';
+            }
+        }
+
+        function showLoginForm() {
+            const loginForm = document.getElementById('loginForm');
+            const signUpForm = document.getElementById('signUpForm');
+
+            loginForm.style.display = 'block';
+            signUpForm.style.display = 'none';
+        }
+
+        function showSignUpForm() {
+            const loginForm = document.getElementById('loginForm');
+            const signUpForm = document.getElementById('signUpForm');
+
+            loginForm.style.display = 'none';
+            signUpForm.style.display = 'block';
+        }
+
 
         function validateEmail() {
             const emailInput = document.getElementById('email');
