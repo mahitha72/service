@@ -184,8 +184,8 @@
 }
 .categories_button{
   margin-top: -30px;
-  position: absolute;
-  left: 640px;
+  position: relative;
+  margin-left: 590px;
 }
 .categories_button a {
     background: #acacac;
@@ -203,6 +203,7 @@
     cursor: pointer;
     text-decoration: none;
 }
+
 .second-step > div {
   padding-top: 20px;
     width: 49%;
@@ -305,25 +306,7 @@
 .footer{
   background-color: aliceblue;
 }
-/* .flex-container .d{
- display: flex;
-} */
-/* .d > dd {
-  margin: 30px;
-  padding: 50px;
-} */
-/* .gridcontainer{
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding: 10px;
-}
-.grid-item{
-  border: none;
-  padding: 20px;
-  width: 25%;
-  height: 10vh;
-  align-items: center;
-} */
+
 .partner h3{
 font-weight: 600;
     font-size: 25px;
@@ -332,11 +315,7 @@ font-weight: 600;
     margin-bottom: 10px;
     display: flex;
 }
-.flexible-center{
-  display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+
 .partners{
   background: color #f4f4f4;;
   padding-top: 50px;

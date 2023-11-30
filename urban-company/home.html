@@ -125,13 +125,13 @@
         <div class="icon-slider">
             <div class="carousel" data-flickity='{ "wrapAround": false, "autoPlay": false, "imagesLoaded":true }'>
                 <div class="carousel-cell" id="filtration-cell">
-                    <div class="new js-cell" onclick="cellnames()">
+                    <div class="new js-cell" onclick="cellnames('filtration-cell')">
                         <img src="Asserts/filtration.png" alt="A/C" width="49px" height="49px">
                     </div>
                     <span>Filtration</span>
                 </div>
                 <div class="carousel-cell" id="ac-cell">
-                    <div class="new js-cell" onclick="cellnames()">
+                    <div class="new js-cell" onclick="cellnames('ac-cell')">
                         <img src="Asserts/air-conditioner.png" alt="A/C" width="49px" height="49px">
                     </div>
                     <span>AC</span>
@@ -139,76 +139,76 @@
                 </div>
 
                 <div class="carousel-cell" id="refrigerator-cell">
-                    <div class="new js-cell" onclick="cellnames()">
+                    <div class="new js-cell" onclick="cellnames('refrigerator-cell')">
                         <img src="Asserts/refrigerator.png" alt="Refrigerator" width="49px" height="49px">
                     </div>
                     <span>Refrigerator</span>
                 </div>
 
                 <div class="carousel-cell" id="wm-cell">
-                    <div class="new js-cell" onclick="cellnames()">
+                    <div class="new js-cell" onclick="cellnames('wm-cell')">
                         <img src="Asserts/washing-machine.png" alt="Washing Machine" width="49px" height="49px">
                     </div>
                     <span>Washing Machine</span>
                 </div>
 
                 <div class="carousel-cell" id="micro-cell">
-                    <div class="new js-cell" onclick="cellnames()">
+                    <div class="new js-cell" onclick="cellnames('micro-cell')">
                         <img src="Asserts/microwave.png" alt="Microwave" width="49px" height="49px">
                     </div>
                     <span>Microwave</span>
                 </div>
 
                 <div class="carousel-cell" id="tv-cell">
-                    <div class="new js-cell" onclick="cellnames()">
+                    <div class="new js-cell" onclick="cellnames('tv-cell')">
                         <img src="Asserts/smart-tv.png" alt="Smart TV" width="49px" height="49px">
                     </div>
                     <span>Smart TV</span>
                 </div>
 
                 <div class="carousel-cell" id="chimney-cell">
-                    <div class="new js-cell" onclick="cellnames()">
+                    <div class="new js-cell" onclick="cellnames('chimney-cell')">
                         <img src="Asserts/food.png" alt="Food" width="49px" height="49px">
                     </div>
                     <span>Chimney</span>
                 </div>
 
                 <div class="carousel-cell" id="boiler-cell">
-                    <div class="new js-cell" onclick="cellnames()">
+                    <div class="new js-cell" onclick="cellnames('boiler-cell')">
                         <img src="Asserts/water-boiler.png" alt="Water Boiler" width="49px" height="49px">
                     </div>
                     <span>Water Boiler</span>
                 </div>
                 <div class="carousel-cell" id="dish-cell">
-                    <div class="new js-cell" onclick="cellnames()">
+                    <div class="new js-cell" onclick="cellnames('dish-cell')">
                         <img src="Asserts/dishwasher.png" alt="Dishwasher" width="49px" height="49px">
                     </div>
                     <span>Dishwasher</span>
                 </div>
 
                 <div class="carousel-cell" id="cooler-cell">
-                    <div class="new js-cell" onclick="cellnames()">
+                    <div class="new js-cell" onclick="cellnames('cooler-cell')">
                         <img src="Asserts/air-cooler.png" alt="Air Cooler" width="49px" height="49px">
                     </div>
                     <span>Cooler</span>
                 </div>
 
                 <div class="carousel-cell" id="fan-cell">
-                    <div class="new js-cell" onclick="cellnames()">
+                    <div class="new js-cell" onclick="cellnames('fan-cell')">
                         <img src="Asserts/fan.png" alt="Fan" width="49px" height="49px">
                     </div>
                     <span>Fan</span>
                 </div>
 
                 <div class="carousel-cell" id="clean-cell">
-                    <div class="new js-cell" onclick="cellnames()">
+                    <div class="new js-cell" onclick="cellnames('clean-cell')">
                         <img src="Asserts/housekeeping.png" alt="Stationary Bike" width="49px" height="49px">
                     </div>
                     <span>Cleaning</span>
                 </div>
 
                 <div class="carousel-cell" id="blend-cell" style="margin-right:50px;">
-                    <div class="new js-cell" onclick="cellnames()">
+                    <div class="new js-cell" onclick="cellnames('blend-cell')">
                         <img src="Asserts/blender.png" alt="Blender" width="49px" height="49px">
                     </div>
                     <span>Kitchen Appliances</span>
@@ -285,8 +285,8 @@
             </div>
 
         </div>
-        <div class="categories_button">
-            <a class="active" onclick="myfunction()" href="wasmachine.html" style="background-color: black;">Book
+        <div class="categories_button" >
+            <a class="active" id="hidden_button" onclick="myfunction()" href="wasmachine.html" style="background-color: black;">Book
                 Now</a>
         </div>
         <section class="partners aos-init aos-animate" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
@@ -380,24 +380,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="footer_widgets">
-                <h5>SOCIAL LINKS</h5>
-                          <ul class="social_links">
-                                  <li>
-                        <a href="#"><img src="https://v1.serviz.in/wp-content/uploads/2023/07/Vector.svg" class="" alt=""></a>
-                      </li>
-                                  <li>
-                        <a href="#"><img src="https://v1.serviz.in/wp-content/uploads/2023/07/twitter.svg" class="" alt=""></a>
-                      </li>
-                                  <li>
-                        <a href="#"><img src="https://v1.serviz.in/wp-content/uploads/2023/07/Linkedin.svg" class="" alt=""></a>
-                      </li>
-                                  <li>
-                        <a href="#"><img src="https://v1.serviz.in/wp-content/uploads/2023/07/instagram.svg" class="" alt=""></a>
-                      </li>
-                              </ul>
-                        <a href="https://play.google.com/store/apps/details?id=in.serviz.app" target="_blank"><img src="https://v1.serviz.in/wp-content/uploads/2023/07/google-play-badge.png" class="img-fluid" alt=""></a>
-              </div> -->
         </footer>
         <script src="script.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
