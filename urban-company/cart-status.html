@@ -11,10 +11,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-
-
 </head>
-
 <body>
     <header>
         <div class="navbar">
@@ -24,28 +21,28 @@
             <div class="nav-loc">
                 <div class="icon-loc"><i class="fa-solid fa-location-dot fa-xl"></i></div>
                 <select class="loc-select">
-                    <option>location</option>
-                        <option>Bhimavaram</option>
-                        <option>Narsapuram</option>
-                        <option>Palakollu</option>
-                        <option>Tanuku</option>
-                        <option>Tadepalligudem</option>
-                    </select>
+                    <option>Location</option>
+                    <option>Bhimavaram</option>
+                    <option>Narsapuram</option>
+                    <option>Palakollu</option>
+                    <option>Tanuku</option>
+                    <option>Tadepalligudem</option>
+                </select>
                 </select>
             </div>
             <div class="service-class border">
                 <a href="#" id="firstname">Services<i class="fa-solid fa-chevron-down fa-la  "></i></a>
                 <div class="box1">
                     <div class="mega-menu" style="
-                        right: 0px;
-                        left: 0px;
-                        bottom: 0px;
-                        margin-left: 0px;
-                        top: 0px;
-                        height: 200px;
-                        padding-left: 588px;
-                        margin-top: 81px;
-                    ">
+                            right: 0px;
+                            left: 0px;
+                            bottom: 0px;
+                            margin-left: 0px;
+                            top: 0px;
+                            height: 200px;
+                            padding-left: 588px;
+                            margin-top: 81px;
+                        ">
                         <div class="content">
                             <div class="main">
                                 <p>Living Room Appliances</p>
@@ -109,11 +106,11 @@
                 <a href="#" id="secondname">Register as Profession</a>
             </div>
             <div class="log">
-                <button id="thirdname">Login</button>
+                <a href="navigate.html">Login</a>
             </div>
         </div>
     </header>
-    <main>
+    <main style="height: 1100px;">
         <div id="cart-status">
         <div id="left-container">
             <div id="left-section1">
@@ -121,7 +118,7 @@
               <br><br>
               <p>Service Cost: $<span id="totalCost">50</span></p>
               <br>
-              <label for="itemCount">No. of Services:</label>
+              <label for="itemCount">No. of Services</label>
               <input type="number" id="itemCount" value="1" min="1" oninput="updateTotalCost()">
             </div>
             <div id="left-section2">
@@ -171,45 +168,51 @@
           </div>
     </main>
     <footer>
-        <div class="heading">SERVIZ  SERVICEABLECITIES  CONTACTUS  SOCIALLINKS</div>
+        <img src="./Asserts/logo.jpg" width="100px" height="100px" class="footer-logo">
         <div class="flex-container">
             <div class="a">
                 <dl>
+                    <h4 class="heading">SERVIZ</h4>
                     <dd>Home</dd>
-                     <dd>Order Status</dd>
-                       <dd> Partner with Serviz</dd>
-                       <dd>Terms & Conditions</dd>
-                       <dd>Privacy Policy</dd>
+                    <dd>Order Status</dd>
+                    <dd> Partner with Serviz</dd>
+                    <dd>Terms & Conditions</dd>
+                    <dd>Privacy Policy</dd>
                 </dl>
             </div>
             <div class="b">
                 <dl>
-                  <dd> Bangalore</dd> 
-                   <dd>Mumbai</dd>
-                   <dd>Delhi</dd>
-                   <dd>Chennai</dd>
-                  <dd>Kolkata</dd>
-                  <dd>Pune</dd>
+                    <h4 class="heading">SERVICEABLECITIES</h4>
+                    <dd> Bhimavaram</dd>
+                    <dd>Narsapuram</dd>
+                    <dd>Palakollu</dd>
+                    <dd>Tanuku</dd>
+                    <dd>Tadepalligudem</dd>
                 </dl>
             </div>
             <div class="c">
                 <dl>
+                    <h4 class="heading">CONTACTUS</h4>
                     <dd>Customer Service</dd>
-                   <dd>+91 76600 99100</dd>
-                   <dd>Email</dd>
-                   <dd>contact@serviz.in</dd>
-                <dd>INFERVIZE HOME SERVICES Pvt Ltd.,<br> 
-                    B-8, D Block, Sector 2, Noida,<br>
-                     Uttar Pradesh. 201301</dd>
+                    <dd>+91 76600 99100</dd>
+                    <dd>Email</dd>
+                    <dd>contact@serviz.in</dd>
+                    <dd>INFERVIZE HOME SERVICES Pvt Ltd.,<br>
+                        B-8, D Block, Sector 2, Noida,<br>
+                        Uttar Pradesh. 201301</dd>
                 </dl>
             </div>
             <div class="d" style="display: flex;">
-                <dl>
-                <dd><img src="./Asserts/instagram.png" width="50%" height="50vh"></dd>
-                <dd><img src="./Asserts/twitter.png" width="50%" height="50vh"></dd>
-                <dd><img src="./Asserts/linkedin.png" width="50%" height="50vh"></dd>
-                <dd><img src="./Asserts/facebook.png" width="50%" height="50vh"></dd>
-                </dl>
+                <div class="d">
+                    <h4 class="heading">SOCIALLINKS</h4>
+                    <!-- <ul style="display: flex; flex-direction: row; list-style: none;"> -->
+                    <img src="./Asserts/instagram.png" width="39rem" height="39rem">
+                    <img src="./Asserts/twitter.png" width="39rem" height="39rem">
+                    <img src="./Asserts/linkedin.png" width="39rem" height="39rem">
+                    <img src="./Asserts/facebook.png" width="39rem" height="39rem">
+                    <!-- </ul> -->
+                              
+                </div>
             </div>
         </div>
     </footer>
