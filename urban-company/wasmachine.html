@@ -19,7 +19,13 @@
             <div class="nav-loc">
                 <div class="icon-loc"><i class="fa-solid fa-location-dot fa-xl"></i></div>
                 <select class="loc-select">
-                    <option>location</option>
+                    <option>Location</option>
+                    <option>Bhimavaram</option>
+                    <option>Narsapuram</option>
+                    <option>Palakollu</option>
+                    <option>Tanuku</option>
+                    <option>Tadepalligudem</option>
+                </select>
                 </select>
             </div>
             <div class="service-class border">
@@ -98,13 +104,13 @@
                 <a href="#" id="secondname">Register as Profession</a>
             </div>
             <div class="log">
-                <a href="#" id="thirdname">Login</a>
+                <a href="navigate.html">Login</a>
             </div>
         </div>
     </header>
-    <main>
+    <main style="height: 1200px;">
         <section class="wallpaper_1">
-            <h1>Washing Machine</h1>
+            <h1 id="heading">Washing Machine</h1>
         </section>
         <div class="medium">
             <div class="drop_box">
@@ -172,71 +178,59 @@
         </div>
     </main>
     <footer>
-        <img src="./Asserts/logo.jpg"  width="100px" height="100px" id="footer-logo"  >
-        <div class="heading"><b>SERVIZ  SERVICEABLECITIES  CONTACTUS  SOCIALLINKS</b></div>
+        <img src="./Asserts/logo.jpg" width="100px" height="100px" class="footer-logo">
         <div class="flex-container">
             <div class="a">
                 <dl>
+                    <h4 class="heading">SERVIZ</h4>
                     <dd>Home</dd>
-                     <dd>Order Status</dd>
-                       <dd> Partner with Serviz</dd>
-                       <dd>Terms & Conditions</dd>
-                       <dd>Privacy Policy</dd>
+                    <dd>Order Status</dd>
+                    <dd> Partner with Serviz</dd>
+                    <dd>Terms & Conditions</dd>
+                    <dd>Privacy Policy</dd>
                 </dl>
             </div>
             <div class="b">
                 <dl>
-                  <dd> Bangalore</dd> 
-                   <dd>Mumbai</dd>
-                   <dd>Delhi</dd>
-                   <dd>Chennai</dd>
-                  <dd>Kolkata</dd>
-                  <dd>Pune</dd>
+                    <h4 class="heading">SERVICEABLECITIES</h4>
+                    <dd> Bhimavaram</dd>
+                    <dd>Narsapuram</dd>
+                    <dd>Palakollu</dd>
+                    <dd>Tanuku</dd>
+                    <dd>Tadepalligudem</dd>
                 </dl>
             </div>
             <div class="c">
                 <dl>
+                    <h4 class="heading">CONTACTUS</h4>
                     <dd>Customer Service</dd>
-                   <dd>+91 76600 99100</dd>
-                   <dd>Email</dd>
-                   <dd>contact@serviz.in</dd>
-                <dd>INFERVIZE HOME SERVICES Pvt Ltd.,<br> 
-                    B-8, D Block, Sector 2, Noida,<br>
-                     Uttar Pradesh. 201301</dd>
+                    <dd>+91 76600 99100</dd>
+                    <dd>Email</dd>
+                    <dd>contact@serviz.in</dd>
+                    <dd>INFERVIZE HOME SERVICES Pvt Ltd.,<br>
+                        B-8, D Block, Sector 2, Noida,<br>
+                        Uttar Pradesh. 201301</dd>
                 </dl>
             </div>
             <div class="d" style="display: flex;">
-                <dl>
-                <dd><img src="./Asserts/instagram.png" width="50%" height="50vh"></dd>
-                <dd><img src="./Asserts/twitter.png" width="50%" height="50vh"></dd>
-                <dd><img src="./Asserts/linkedin.png" width="50%" height="50vh"></dd>
-                <dd><img src="./Asserts/facebook.png" width="50%" height="50vh"></dd>
-                </dl>
+                <div class="d">
+                    <h4 class="heading">SOCIALLINKS</h4>
+                    <!-- <ul style="display: flex; flex-direction: row; list-style: none;"> -->
+                    <img src="./Asserts/instagram.png" width="39rem" height="39rem">
+                    <img src="./Asserts/twitter.png" width="39rem" height="39rem">
+                    <img src="./Asserts/linkedin.png" width="39rem" height="39rem">
+                    <img src="./Asserts/facebook.png" width="39rem" height="39rem">
+                    <!-- </ul> -->
+                              
+                </div>
             </div>
         </div>
-        <!-- <div class="footer_widgets">
-            <h5>SOCIAL LINKS</h5>
-                      <ul class="social_links">
-                              <li>
-                    <a href="#"><img src="https://v1.serviz.in/wp-content/uploads/2023/07/Vector.svg" class="" alt=""></a>
-                  </li>
-                              <li>
-                    <a href="#"><img src="https://v1.serviz.in/wp-content/uploads/2023/07/twitter.svg" class="" alt=""></a>
-                  </li>
-                              <li>
-                    <a href="#"><img src="https://v1.serviz.in/wp-content/uploads/2023/07/Linkedin.svg" class="" alt=""></a>
-                  </li>
-                              <li>
-                    <a href="#"><img src="https://v1.serviz.in/wp-content/uploads/2023/07/instagram.svg" class="" alt=""></a>
-                  </li>
-                          </ul>
-                    <a href="https://play.google.com/store/apps/details?id=in.serviz.app" target="_blank"><img src="https://v1.serviz.in/wp-content/uploads/2023/07/google-play-badge.png" class="img-fluid" alt=""></a>
-          </div> -->
     </footer>
     <script>
         document.getElementById("warn").innerHTML = localStorage.getItem("v1");
     document.getElementById("brand").innerHTML = localStorage.getItem("v2");
         document.getElementById("appliance").innerHTML = localStorage.getItem("spancontent");
+        document.getElementById("heading").innerHTML=localStorage.getItem("spancontent");
     </script>
 
 </html>

@@ -58,81 +58,9 @@ function updateTotalCost() {
 //   localStorage.setItem("spancontent", spanvalue);
 //   document.getElementById("display-drops").style.visibility = "visible";
 // }
-function cellnames() {
-  const filtrationCell = document.getElementById("filtration-cell");
-  const spanValue = filtrationCell.querySelector("span").innerHTML;
-  localStorage.setItem("spancontent", spanValue);
-  document.getElementById("display-drops").style.visibility = "visible";
-}
-function cellnames() {
-  const filtrationCell = document.getElementById("ac-cell");
-  const spanValue = filtrationCell.querySelector("span").innerHTML;
-  localStorage.setItem("spancontent", spanValue);
-  document.getElementById("display-drops").style.visibility = "visible";
-}
-function cellnames() {
-  const filtrationCell = document.getElementById("refrigerator-cell");
-  const spanValue = filtrationCell.querySelector("span").innerHTML;
-  localStorage.setItem("spancontent", spanValue);
-  document.getElementById("display-drops").style.visibility = "visible";
-}
-function cellnames() {
-  const filtrationCell = document.getElementById("wm-cell");
-  const spanValue = filtrationCell.querySelector("span").innerHTML;
-  localStorage.setItem("spancontent", spanValue);
-  document.getElementById("display-drops").style.visibility = "visible";
-}
-function cellnames() {
-  const filtrationCell = document.getElementById("micro-cell");
-  const spanValue = filtrationCell.querySelector("span").innerHTML;
-  localStorage.setItem("spancontent", spanValue);
-  document.getElementById("display-drops").style.visibility = "visible";
-}
-function cellnames() {
-  const filtrationCell = document.getElementById("tv-cell");
-  const spanValue = filtrationCell.querySelector("span").innerHTML;
-  localStorage.setItem("spancontent", spanValue);
-  document.getElementById("display-drops").style.visibility = "visible";
-}
-function cellnames() {
-  const filtrationCell = document.getElementById("chimney-cell");
-  const spanValue = filtrationCell.querySelector("span").innerHTML;
-  localStorage.setItem("spancontent", spanValue);
-  document.getElementById("display-drops").style.visibility = "visible";
-}
-function cellnames() {
-  const filtrationCell = document.getElementById("boiler-cell");
-  const spanValue = filtrationCell.querySelector("span").innerHTML;
-  localStorage.setItem("spancontent", spanValue);
-  document.getElementById("display-drops").style.visibility = "visible";
-}
-function cellnames() {
-  const filtrationCell = document.getElementById("dish-cell");
-  const spanValue = filtrationCell.querySelector("span").innerHTML;
-  localStorage.setItem("spancontent", spanValue);
-  document.getElementById("display-drops").style.visibility = "visible";
-}
-function cellnames() {
-  const filtrationCell = document.getElementById("cooler-cell");
-  const spanValue = filtrationCell.querySelector("span").innerHTML;
-  localStorage.setItem("spancontent", spanValue);
-  document.getElementById("display-drops").style.visibility = "visible";
-}
-function cellnames() {
-  const filtrationCell = document.getElementById("fan-cell");
-  const spanValue = filtrationCell.querySelector("span").innerHTML;
-  localStorage.setItem("spancontent", spanValue);
-  document.getElementById("display-drops").style.visibility = "visible";
-}
-function cellnames() {
-  const filtrationCell = document.getElementById("clean-cell");
-  const spanValue = filtrationCell.querySelector("span").innerHTML;
-  localStorage.setItem("spancontent", spanValue);
-  document.getElementById("display-drops").style.visibility = "visible";
-}
-function cellnames() {
-  const filtrationCell = document.getElementById("blend-cell");
-  const spanValue = filtrationCell.querySelector("span").innerHTML;
+function cellnames(elementID) {
+  const filtrationCell = document.getElementById(elementID);
+  var spanValue = filtrationCell.querySelector("span").innerHTML;
   localStorage.setItem("spancontent", spanValue);
   document.getElementById("display-drops").style.visibility = "visible";
 }
