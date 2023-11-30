@@ -124,8 +124,8 @@
     <div class="container-1" id="loginForm">
         <h2>Login</h2>
         <div class="form-group">
-            <label for="loginUsername">Username:</label>
-            <input type="text" id="loginUsername" placeholder="Enter your username">
+            <label for="loginEmail">Email:</label>
+            <input type="text" id="loginEmail" placeholder="Enter your email">
         </div>
         <div class="form-group">
             <label for="loginPassword">Password:</label>
@@ -257,18 +257,6 @@
 
             loginForm.style.display = 'none';
             signUpForm.style.display = 'block';
-        }
-
-
-        function validateEmail() {
-            const emailInput = document.getElementById('email');
-            const enteredEmail = emailInput.value.toLowerCase();
-
-            if (enteredEmail.includes('@example.com')) {
-                alert('Email is valid. It contains the example.com domain.');
-            } else {
-                alert('Email is not valid. It must contain the example.com domain.');
-            }
         }
     </script>
 </body>
