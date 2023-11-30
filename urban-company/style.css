@@ -176,15 +176,16 @@
   border: 1px solid black;
   display: flex;
   position: absolute;
-  top: 477px;
+  top: 380px;
   width: 843px;
   height: 246px;
   left: 300px;
-  visibility: visible;
+  visibility: hidden;
 }
 .categories_button{
-  text-align: center;
   margin-top: -30px;
+  position: absolute;
+  left: 640px;
 }
 .categories_button a {
     background: #acacac;
@@ -245,7 +246,7 @@
   border-radius: 5px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
-  width: 80%;
+  width: 843px;
   
 }
 .flickity-viewport {
@@ -498,10 +499,10 @@ width: 50vw;
 .d{
   display: inline;
 }
-#filtration-cell{
+.js-cell{
   cursor: pointer;
 }
-#filtration-cell:hover{
+.js-cell:hover{
   border: 2px solid rgba(0, 0, 0, 0.658);
 }
 .footer-logo{

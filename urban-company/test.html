@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- your head content here -->
+</head>
+
+<body>
+    <!-- your body content here -->
+    <div id="exampleId">
+        <p>This is a paragraph inside the exampleId element.</p>
+        <div>
+            <p>This is another paragraph nested inside a div.</p>
+        </div>
+        <span>This is a span element inside the exampleId element.</span>
+    </div>
+
+    <script>
+        // Assuming you have an element with the ID "exampleId"
+        var container = document.getElementById("exampleId");
+
+        // Select a specific tag within the element with ID "exampleId"
+        var specificTag = container.querySelector("p"); // Select the first <p> tag
+
+        // Now you can work with the specificTag
+        if (specificTag) {
+            // Do something with the selected tag
+            console.log(specificTag.textContent);
+        }
+    </script>
+</body>
+
+</html>

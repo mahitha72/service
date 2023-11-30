@@ -124,106 +124,106 @@
         </div>
         <div class="icon-slider">
             <div class="carousel" data-flickity='{ "wrapAround": false, "autoPlay": false, "imagesLoaded":true }'>
-                <div class="carousel-cell">
-                    <div class="new" id="filtration-cell">
+                <div class="carousel-cell" id="filtration-cell">
+                    <div class="new js-cell" onclick="cellnames()">
                         <img src="Asserts/filtration.png" alt="A/C" width="49px" height="49px">
                     </div>
                     <span>Filtration</span>
                 </div>
-                <div class="carousel-cell">
-                    <div class="new">
+                <div class="carousel-cell" id="ac-cell">
+                    <div class="new js-cell" onclick="cellnames()">
                         <img src="Asserts/air-conditioner.png" alt="A/C" width="49px" height="49px">
                     </div>
                     <span>AC</span>
 
                 </div>
 
-                <div class="carousel-cell">
-                    <div class="new">
+                <div class="carousel-cell" id="refrigerator-cell">
+                    <div class="new js-cell" onclick="cellnames()">
                         <img src="Asserts/refrigerator.png" alt="Refrigerator" width="49px" height="49px">
                     </div>
                     <span>Refrigerator</span>
                 </div>
 
-                <div class="carousel-cell">
-                    <div class="new">
+                <div class="carousel-cell" id="wm-cell">
+                    <div class="new js-cell" onclick="cellnames()">
                         <img src="Asserts/washing-machine.png" alt="Washing Machine" width="49px" height="49px">
                     </div>
                     <span>Washing Machine</span>
                 </div>
 
-                <div class="carousel-cell">
-                    <div class="new">
+                <div class="carousel-cell" id="micro-cell">
+                    <div class="new js-cell" onclick="cellnames()">
                         <img src="Asserts/microwave.png" alt="Microwave" width="49px" height="49px">
                     </div>
                     <span>Microwave</span>
                 </div>
 
-                <div class="carousel-cell">
-                    <div class="new">
+                <div class="carousel-cell" id="tv-cell">
+                    <div class="new js-cell" onclick="cellnames()">
                         <img src="Asserts/smart-tv.png" alt="Smart TV" width="49px" height="49px">
                     </div>
                     <span>Smart TV</span>
                 </div>
 
-                <div class="carousel-cell">
-                    <div class="new">
+                <div class="carousel-cell" id="chimney-cell">
+                    <div class="new js-cell" onclick="cellnames()">
                         <img src="Asserts/food.png" alt="Food" width="49px" height="49px">
                     </div>
-                    <span>Food</span>
+                    <span>Chimney</span>
                 </div>
 
-                <div class="carousel-cell">
-                    <div class="new">
+                <div class="carousel-cell" id="boiler-cell">
+                    <div class="new js-cell" onclick="cellnames()">
                         <img src="Asserts/water-boiler.png" alt="Water Boiler" width="49px" height="49px">
                     </div>
                     <span>Water Boiler</span>
                 </div>
-                <div class="carousel-cell">
-                    <div class="new">
+                <div class="carousel-cell" id="dish-cell">
+                    <div class="new js-cell" onclick="cellnames()">
                         <img src="Asserts/dishwasher.png" alt="Dishwasher" width="49px" height="49px">
                     </div>
                     <span>Dishwasher</span>
                 </div>
 
-                <div class="carousel-cell">
-                    <div class="new">
+                <div class="carousel-cell" id="cooler-cell">
+                    <div class="new js-cell" onclick="cellnames()">
                         <img src="Asserts/air-cooler.png" alt="Air Cooler" width="49px" height="49px">
                     </div>
                     <span>Cooler</span>
                 </div>
 
-                <div class="carousel-cell">
-                    <div class="new">
+                <div class="carousel-cell" id="fan-cell">
+                    <div class="new js-cell" onclick="cellnames()">
                         <img src="Asserts/fan.png" alt="Fan" width="49px" height="49px">
                     </div>
                     <span>Fan</span>
                 </div>
 
-                <div class="carousel-cell">
-                    <div class="new">
-                        <img src="Asserts/stationary-bike.png" alt="Stationary Bike" width="49px" height="49px">
+                <div class="carousel-cell" id="clean-cell">
+                    <div class="new js-cell" onclick="cellnames()">
+                        <img src="Asserts/housekeeping.png" alt="Stationary Bike" width="49px" height="49px">
                     </div>
-                    <span>Stationary Bike</span>
+                    <span>Cleaning</span>
                 </div>
 
+                <div class="carousel-cell" id="blend-cell" style="margin-right:50px;">
+                    <div class="new js-cell" onclick="cellnames()">
+                        <img src="Asserts/blender.png" alt="Blender" width="49px" height="49px">
+                    </div>
+                    <span>Kitchen Appliances</span>
+                </div>
                 <div class="carousel-cell">
-                    <div class="new">
+                    <div class="new js-cell">
                         <img src="Asserts/Dehumidifier.png" alt="Dehumidifier" width="49px" height="49px">
                     </div>
                     <span>Dehumidifier</span>
                 </div>
 
-                <div class="carousel-cell">
-                    <div class="new">
-                        <img src="Asserts/blender.png" alt="Blender" width="49px" height="49px">
-                    </div>
-                    <span>Blender</span>
-                </div>
 
             </div>
         </div>
-        <div class="steps second-step add_step_two">
+        <div class="steps second-step add_step_two" id="display-drops">
 
             <!-- <div class="ss1">
                 <select class="cat" disabled="">
@@ -250,22 +250,22 @@
 
 
             <div class="ss2">
-                <select class="brands">
-                    <option value="" selected="" disabled="">Select Brand</option>
-                    <option value="63ef29c0a2e48d266c88c1a9">LG</option>
-                    <option value="63ef5457a2e48d266c88c1fc">Voltas</option>
-                    <option value="63ef553ea2e48d266c88c206">Blue Star</option>
-                    <option value="6411b7a2627b996e1f95248a">Whirlpool.</option>
-                    <option value="63ef5720a2e48d266c88c214">Llyod</option>
-                    <option value="63ef6780a2e48d266c88c244">Samsung</option>
-                    <option value="63ef67fda2e48d266c88c249">Whirlpool</option>
-                    <option value="63ef686fa2e48d266c88c24d">Godrej</option>
-                    <option value="63ef6941a2e48d266c88c251">Bosch</option>
-                    <option value="6413f91ac5e36124a388a0a3">Wybor</option>
-                    <option value="64103e1209c62e938667d5cd">Panasonic</option>
-                    <option value="6410439709c62e938667d6d0">Haier</option>
-                    <option value="64140037c5e36124a388a13f">.Hisense</option>
-                    <option value="64103d0a09c62e938667d59b">Midea</option>
+                <select class="brands" id="Brand">
+                    <option>Select Brand</option>
+                    <option>LG</option>
+                    <option>Voltas</option>
+                    <option>Blue Star</option>
+                    <option>Whirlpool.</option>
+                    <option>Llyod</option>
+                    <option>Samsung</option>
+                    <option>Whirlpool</option>
+                    <option>Godrej</option>
+                    <option>Bosch</option>
+                    <option>Wybor</option>
+                    <option>Panasonic</option>
+                    <option>Haier</option>
+                    <option>.Hisense</option>
+                    <option>Midea</option>
                 </select>
                 <span>Brand</span>
             </div>
@@ -336,7 +336,8 @@
             <img src="./Asserts/logo.jpg" width="100px" height="100px" class="footer-logo">
             <div class="flex-container">
                 <div class="a">
-                    <dl><h4 class="heading">SERVIZ</h4>
+                    <dl>
+                        <h4 class="heading">SERVIZ</h4>
                         <dd>Home</dd>
                         <dd>Order Status</dd>
                         <dd> Partner with Serviz</dd>
@@ -345,7 +346,8 @@
                     </dl>
                 </div>
                 <div class="b">
-                    <dl><h4 class="heading">SERVICEABLECITIES</h4>
+                    <dl>
+                        <h4 class="heading">SERVICEABLECITIES</h4>
                         <dd> Bhimavaram</dd>
                         <dd>Narsapuram</dd>
                         <dd>Palakollu</dd>
@@ -354,7 +356,8 @@
                     </dl>
                 </div>
                 <div class="c">
-                    <dl><h4 class="heading">CONTACTUS</h4>
+                    <dl>
+                        <h4 class="heading">CONTACTUS</h4>
                         <dd>Customer Service</dd>
                         <dd>+91 76600 99100</dd>
                         <dd>Email</dd>
@@ -368,10 +371,10 @@
                     <div class="d">
                         <h4 class="heading">SOCIALLINKS</h4>
                         <!-- <ul style="display: flex; flex-direction: row; list-style: none;"> -->
-                            <img src="./Asserts/instagram.png" width="39rem" height="39rem">
-                            <img src="./Asserts/twitter.png" width="39rem" height="39rem">
-                            <img src="./Asserts/linkedin.png" width="39rem" height="39rem">
-                            <img src="./Asserts/facebook.png" width="39rem" height="39rem">
+                        <img src="./Asserts/instagram.png" width="39rem" height="39rem">
+                        <img src="./Asserts/twitter.png" width="39rem" height="39rem">
+                        <img src="./Asserts/linkedin.png" width="39rem" height="39rem">
+                        <img src="./Asserts/facebook.png" width="39rem" height="39rem">
                         <!-- </ul> -->
                                   
                     </div>

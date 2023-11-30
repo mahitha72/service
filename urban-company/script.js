@@ -25,18 +25,21 @@ var flkty = new Flickity(".carousel", {
   friction: 0.01, // Set a very low friction value
   pageDots: false, // Hide the page dots
 });
-function myfunction()
-{
-  const value1 = document.getElementById("warranty").value
-  localStorage.setItem("v1",value1)
+function myfunction() {
+  const value1 = document.getElementById("warranty").value;
+  const brandDropdown = document.getElementById("Brand");
+  const selectedBrand = brandDropdown.options[brandDropdown.selectedIndex].innerText;
+  localStorage.setItem("v1", value1);
+  localStorage.setItem("v2", selectedBrand);
 }
+
 function updateTotalCost() {
   // Get the item count and calculate the total cost
   const itemCount = document.getElementById("itemCount").value;
   const costPerItem = 50; // Replace with your actual cost per item
   const totalCost = itemCount * costPerItem;
 
- // Update the total cost in the HTML
+  // Update the total cost in the HTML
   document.getElementById("totalCost").innerText = totalCost;
 
   // Calculate and update payment summary
@@ -48,8 +51,88 @@ function updateTotalCost() {
   document.getElementById("subTotal").innerText = subTotal;
   document.getElementById("tax").innerText = tax;
   document.getElementById("fee").innerText = fee;
-  document.getElementById("grandTotal").innerText = grandTotal;
+  document.getElementById("grandTotal").innerText = grandTotal;
 }
-document.getElementById("filtration-cell").addEventListener("click", function () {
-  document.getElementById("")
-});
+// function cellnames() {
+//   const spanvalue = document.getElementById("filtration-cell").querySelector("span").innerText;
+//   localStorage.setItem("spancontent", spanvalue);
+//   document.getElementById("display-drops").style.visibility = "visible";
+// }
+function cellnames() {
+  const filtrationCell = document.getElementById("filtration-cell");
+  const spanValue = filtrationCell.querySelector("span").innerHTML;
+  localStorage.setItem("spancontent", spanValue);
+  document.getElementById("display-drops").style.visibility = "visible";
+}
+function cellnames() {
+  const filtrationCell = document.getElementById("ac-cell");
+  const spanValue = filtrationCell.querySelector("span").innerHTML;
+  localStorage.setItem("spancontent", spanValue);
+  document.getElementById("display-drops").style.visibility = "visible";
+}
+function cellnames() {
+  const filtrationCell = document.getElementById("refrigerator-cell");
+  const spanValue = filtrationCell.querySelector("span").innerHTML;
+  localStorage.setItem("spancontent", spanValue);
+  document.getElementById("display-drops").style.visibility = "visible";
+}
+function cellnames() {
+  const filtrationCell = document.getElementById("wm-cell");
+  const spanValue = filtrationCell.querySelector("span").innerHTML;
+  localStorage.setItem("spancontent", spanValue);
+  document.getElementById("display-drops").style.visibility = "visible";
+}
+function cellnames() {
+  const filtrationCell = document.getElementById("micro-cell");
+  const spanValue = filtrationCell.querySelector("span").innerHTML;
+  localStorage.setItem("spancontent", spanValue);
+  document.getElementById("display-drops").style.visibility = "visible";
+}
+function cellnames() {
+  const filtrationCell = document.getElementById("tv-cell");
+  const spanValue = filtrationCell.querySelector("span").innerHTML;
+  localStorage.setItem("spancontent", spanValue);
+  document.getElementById("display-drops").style.visibility = "visible";
+}
+function cellnames() {
+  const filtrationCell = document.getElementById("chimney-cell");
+  const spanValue = filtrationCell.querySelector("span").innerHTML;
+  localStorage.setItem("spancontent", spanValue);
+  document.getElementById("display-drops").style.visibility = "visible";
+}
+function cellnames() {
+  const filtrationCell = document.getElementById("boiler-cell");
+  const spanValue = filtrationCell.querySelector("span").innerHTML;
+  localStorage.setItem("spancontent", spanValue);
+  document.getElementById("display-drops").style.visibility = "visible";
+}
+function cellnames() {
+  const filtrationCell = document.getElementById("dish-cell");
+  const spanValue = filtrationCell.querySelector("span").innerHTML;
+  localStorage.setItem("spancontent", spanValue);
+  document.getElementById("display-drops").style.visibility = "visible";
+}
+function cellnames() {
+  const filtrationCell = document.getElementById("cooler-cell");
+  const spanValue = filtrationCell.querySelector("span").innerHTML;
+  localStorage.setItem("spancontent", spanValue);
+  document.getElementById("display-drops").style.visibility = "visible";
+}
+function cellnames() {
+  const filtrationCell = document.getElementById("fan-cell");
+  const spanValue = filtrationCell.querySelector("span").innerHTML;
+  localStorage.setItem("spancontent", spanValue);
+  document.getElementById("display-drops").style.visibility = "visible";
+}
+function cellnames() {
+  const filtrationCell = document.getElementById("clean-cell");
+  const spanValue = filtrationCell.querySelector("span").innerHTML;
+  localStorage.setItem("spancontent", spanValue);
+  document.getElementById("display-drops").style.visibility = "visible";
+}
+function cellnames() {
+  const filtrationCell = document.getElementById("blend-cell");
+  const spanValue = filtrationCell.querySelector("span").innerHTML;
+  localStorage.setItem("spancontent", spanValue);
+  document.getElementById("display-drops").style.visibility = "visible";
+}
