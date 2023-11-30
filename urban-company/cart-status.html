@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
+
 <body>
     <header>
         <div class="navbar">
@@ -110,62 +111,70 @@
             </div>
         </div>
     </header>
-    <main style="height: 1100px;">
+    <main style="height: 700px;">
         <div id="cart-status">
-        <div id="left-container">
-            <div id="left-section1">
-              <h2>Order Summary</h2>
-              <br><br>
-              <p>Service Cost: $<span id="totalCost">50</span></p>
-              <br>
-              <label for="itemCount">No. of Services</label>
-              <input type="number" id="itemCount" value="1" min="1" oninput="updateTotalCost()">
+            <div id="left-container">
+                <div id="left-section1">
+                    <h2>Order Summary</h2>
+                    <br><br>
+                    <p>Service Cost: $<span id="totalCost">50</span></p>
+                    <br>
+                    <label for="itemCount">No. of Services</label>
+                    <div class="container">
+                        <button id="decrement" onclick="stepper(this)"> - </button>
+                        <input type="number" min="0" max="100" step="1" value="20" id="my-input" readonly>
+                        <button id="increment" onclick="stepper(this)"> + </button>
+                    </div>
+                </div>
+                <div id="left-section2">
+                    <h2>Add Instructions and Suggestions</h2>
+                    <br>
+                    <label for="comments"></label>
+                    <textarea id="comments" placeholder="Comments"></textarea>
+                </div>
+                <div id="left-section3">
+                    <h2 style=" padding-top: 20px;padding-left: 30px;"><img src="Asserts/discount-shape-svgrepo-com.svg"
+                            style="position:relative;top: 4px;margin-right: 5px;" width="25px" height="25px" alt="discount">Coupons
+                        and Offers</h2>
+                    <br><br>
+                    <p style="margin-left: 30px;"><input type="text" placeholder="Enter promo code"></p>
+                    <!-- Add more details as needed -->
+                </div>
             </div>
-            <div id="left-section2">
-              <h2>Add Instructions and Suggestions</h2>
-              <br>
-              <label for="comments"></label>
-              <textarea id="comments" placeholder="Comments"></textarea>
+            <div id="right-container">
+                <div id="right-section1">
+                    <h2>Payment Summary</h2>
+                    <div id="payment-summary">
+                        <br>
+                        <p>Sub-total:<span style="position: relative;left: 200px;">$</span><span id="subTotal"style="position: relative;left: 210px;">50</span></p>
+                        <br>
+                        <p>Tax: <span style="position: relative;left: 250px;">$</span><span id="tax" style="position: relative;left: 250px;">5</span></p>
+                        <br>
+                        <p>Fee: <span style="position: relative;left: 250px;">$</span><span id="fee" style="position: relative;left: 250px;">5</span></p>
+                        <br>
+                        <hr style="margin-bottom: 10px;">
+
+                        <p>Grand Total: <span style="position: relative;left: 150px;">$</span><span id="grandTotal" style="position: relative;left: 180px;">60</span></p>
+                    </div>
+                </div>
+                <div id="right-section2">
+                    <h2>Delivery Details</h2>
+                    <br><br>
+                    <label for="address">Delivery Address:</label>
+                    <br><br>
+                    <textarea id="address" placeholder="Enter your delivery address"></textarea>
+                    <br>
+                    <label for="slot">Select a Slot:</label>
+                    <select id="slot">
+                        <option value="morning">Morning</option>
+                        <option value="afternoon">Afternoon</option>
+                        <option value="evening">Evening</option>
+                    </select>
+                    <br>
+                    <button id="submit-button" onclick="submitOrder()">Submit Order</button>
+                </div>
             </div>
-            <div id="left-section3">
-              <h2>Coupons and Offers</h2>
-              <br><br>
-              <p>Apply promo code: <input type="text" placeholder="Enter promo code"></p>
-              <!-- Add more details as needed -->
-            </div>
-          </div>
-          <div id="right-container">
-            <div id="right-section1">
-              <h2>Payment Summary</h2>
-              <div id="payment-summary">
-                <br>
-                <p>Sub-total: $<span id="subTotal">50</span></p>
-                <br>
-                <p>Tax: $<span id="tax">5</span></p>
-                <br>
-                <p>Fee: $<span id="fee">5</span></p>
-                <br>
-                <p>Grand Total: $<span id="grandTotal">60</span></p>
-              </div>
-            </div>
-            <div id="right-section2">
-              <h2>Delivery Details</h2>
-              <br><br>
-              <label for="address">Delivery Address:</label>
-              <br><br>
-              <textarea id="address" placeholder="Enter your delivery address"></textarea>
-              <br>
-              <label for="slot">Select a Slot:</label>
-              <select id="slot">
-                <option value="morning">Morning</option>
-                <option value="afternoon">Afternoon</option>
-                <option value="evening">Evening</option>
-              </select>
-              <br>
-              <button id="submit-button" onclick="submitOrder()">Submit Order</button>
-            </div>
-          </div>
-          </div>
+        </div>
     </main>
     <footer>
         <img src="./Asserts/logo.jpg" width="100px" height="100px" class="footer-logo">
@@ -216,9 +225,25 @@
             </div>
         </div>
     </footer>
-        <script src="script.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script>
+        const myInput = document.getElementById("my-input");
+        function stepper(btn) {
+            let id = btn.getAttribute("id");
+            let min = myInput.getAttribute("min");
+            let max = myInput.getAttribute("max");
+            let step = myInput.getAttribute("step");
+            let val = myInput.getAttribute("value");
+            let calcStep = (id == "increment") ? (step * 1) : (step * -1);
+            let newValue = parseInt(val) + calcStep;
+
+            if (newValue >= min && newValue <= max) {
+                myInput.setAttribute("value", newValue);
+            }
+        }
+    </script>
 </body>
 
 </html>
