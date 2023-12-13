@@ -11,6 +11,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
 
 
 </head>
@@ -108,12 +110,13 @@
             <div class="status">
                 <a href="cart-status.html" id="secondname"><img width="50px" height="50px" src="Asserts/delivery-status.png" alt=""></a>
             </div>
+            
             <div class="log">
                 <a href="#">Login</a>
             </div>
-            <section id="loginfloat" style="visibility: hidden;">
+            <section id="loginfloat" class="login-section">
                 <div class="container-login">
-                    <!-- Login Form -->
+                    
                     <div id="loginForm">
                         <h2>Login</h2>
                         <div class="form-group">
@@ -127,8 +130,7 @@
                         <button class="mybutton" onclick="login()">Log in</button>
                         <p>Don't have an account? <a href="#" onclick="toggleForm()">Sign Up</a></p>
                     </div>
-
-                    <!-- Sign Up Form -->
+                    
                     <div id="signupForm" style="display:none;">
                         <h2>Sign Up</h2>
                         <div class="form-group">
@@ -145,14 +147,21 @@
                 </div>
             </section>
 
+
+            
             <script>
                 document.addEventListener('DOMContentLoaded', function() {
-                    document.querySelector('.log a').addEventListener('click', function() {
-                        var loginSection = document.getElementById('loginfloat');
-                        loginSection.style.visibility = 'visible';
+                    var loginSection = document.getElementById('loginfloat');
+                    var loginLink = document.querySelector('.log a');
+            
+                    loginLink.addEventListener('click', function() {
+                        loginSection.classList.add('visible');
                     });
                 });
             </script>
+            
+
+
         </div>
     </header>
     <main>
@@ -426,6 +435,7 @@
         <script src="script.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script type=" text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
 </body>
 
 </html>
