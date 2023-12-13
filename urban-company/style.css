@@ -666,7 +666,7 @@ input::-webkit-inner-spin-button {
           visibility: hidden; /* Initially hidden */
         }
 
-        .container {
+        .container-login {
             width: 300px;
             height: 350px;
             padding: 20px;
