@@ -122,7 +122,7 @@
                     <label for="itemCount">No. of Services</label>
                     <div class="container">
                         <button id="decrement" onclick="stepper(this)"> - </button>
-                        <input type="number" min="0" max="100" step="1" value="1" id="my-input" readonly>
+                        <input type="number" min="0" max="100" step="1" value="1" id="itemCount" readonly>
                         <button id="increment" onclick="stepper(this)"> + </button>
                     </div>
                 </div>
@@ -229,20 +229,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script>
-        const myInput = document.getElementById("my-input");
-        function stepper(btn) {
-            let id = btn.getAttribute("id");
-            let min = myInput.getAttribute("min");
-            let max = myInput.getAttribute("max");
-            let step = myInput.getAttribute("step");
-            let val = myInput.getAttribute("value");
-            let calcStep = (id == "increment") ? (step * 1) : (step * -1);
-            let newValue = parseInt(val) + calcStep;
+        const itemCount = document.getElementById("itemCount");
+        function stepper(button) {
+        const inputElement = document.getElementById("itemCount");
+        let value = parseInt(inputElement.value);
 
-            if (newValue >= min && newValue <= max) {
-                myInput.setAttribute("value", newValue);
-            }
+        if (button.id === "increment") {
+            value++;
+        } else if (button.id === "decrement" && value > 0) {
+            value--;
         }
+
+    inputElement.value = value;
+    updateTotalCost();
+    }
     </script>
 </body>
 
