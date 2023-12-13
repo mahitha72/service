@@ -64,3 +64,36 @@ function cellnames(elementID) {
   localStorage.setItem("spancontent", spanValue);
   document.getElementById("display-drops").style.visibility = "visible";
 }
+function toggleForm() {
+  const loginForm = document.getElementById("loginForm");
+  const signupForm = document.getElementById("signupForm");
+
+  if (loginForm.style.display === "none") {
+    loginForm.style.display = "block";
+    signupForm.style.display = "none";
+  } else {
+    loginForm.style.display = "none";
+    signupForm.style.display = "block";
+  }
+}
+
+function login() {
+  const username = document.getElementById("loginUsername").value;
+  const password = document.getElementById("loginPassword").value;
+  if (username === "admin" && password === "admin") {
+    window.location.href = "/urban-company/home.html";
+  } else {
+    console.log("Please verify Details");
+  }
+
+  // Implement your login logic here
+  console.log(`Login - Username: ${username}, Password: ${password}`);
+}
+
+function signup() {
+  const username = document.getElementById("signupUsername").value;
+  const password = document.getElementById("signupPassword").value;
+
+  // Implement your signup logic here
+  console.log(`Sign Up - Username: ${username}, Password: ${password}`);
+}
