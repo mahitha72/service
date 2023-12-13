@@ -35,7 +35,7 @@ function myfunction() {
 
 function updateTotalCost() {
   // Get the item count and calculate the total cost
-  const itemCount = document.getElementById("itemCount  ").value;
+  const itemCount = document.getElementById("itemCount").value;
   const costPerItem = 50; // Replace with your actual cost per item
   const totalCost = itemCount * costPerItem;
 
