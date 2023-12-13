@@ -109,8 +109,50 @@
                 <a href="cart-status.html" id="secondname"><img width="50px" height="50px" src="Asserts/delivery-status.png" alt=""></a>
             </div>
             <div class="log">
-                <a href="navigate.html">Login</a>
+                <a href="#">Login</a>
             </div>
+            <section id="loginfloat" style="visibility: hidden;">
+                <div class="container">
+                    <!-- Login Form -->
+                    <div id="loginForm">
+                        <h2>Login</h2>
+                        <div class="form-group">
+                            <label class="mylabel" for="loginUsername">Username:</label>
+                            <input class="myinput" type="text" id="loginUsername" placeholder="Enter your username">
+                        </div>
+                        <div class="form-group">
+                            <label class="mylabel" for="loginPassword">Password:</label>
+                            <input class="myinput" type="password" id="loginPassword" placeholder="Enter your password">
+                        </div>
+                        <button class="mybutton" onclick="login()">Log in</button>
+                        <p>Don't have an account? <a href="#" onclick="toggleForm()">Sign Up</a></p>
+                    </div>
+
+                    <!-- Sign Up Form -->
+                    <div id="signupForm" style="display:none;">
+                        <h2>Sign Up</h2>
+                        <div class="form-group">
+                            <label class="mylabel" for="signupUsername">Username:</label>
+                            <input class="myinput" type="text" id="signupUsername" placeholder="Choose a username">
+                        </div>
+                        <div class="form-group">
+                            <label class="mylabel" for="signupPassword">Password:</label>
+                            <input class="myinput" type="password" id="signupPassword" placeholder="Choose a password">
+                        </div>
+                        <button class="mybutton" onclick="signup()">Sign Up</button>
+                        <p>Already have an account? <a href="#" onclick="toggleForm()">Log in</a></p>
+                    </div>
+                </div>
+            </section>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    document.querySelector('.log a').addEventListener('click', function() {
+                        var loginSection = document.getElementById('loginfloat');
+                        loginSection.style.visibility = 'visible';
+                    });
+                });
+            </script>
         </div>
     </header>
     <main>

@@ -11,16 +11,14 @@
   box-shadow: 0 0 0 4px #b5c9fc;
 }
 
-
-
-.mydict div {
+#mydict div {
   display: flex;
   flex-wrap: wrap;
   margin-top: 0.5rem;
   justify-content: center;
 }
 
-.mydict input[type="radio"] {
+#mydict input[type="radio"] {
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
   height: 1px;
@@ -30,14 +28,14 @@
   width: 1px;
 }
 
-.mydict input[type="radio"]:checked + span {
+#mydict input[type="radio"]:checked + span {
   box-shadow: 0 0 0 0.0625em #0043ed;
   background-color: #dee7ff;
   z-index: 1;
   color: #0043ed;
 }
 
-label span {
+.mylabel span {
   display: block;
   cursor: pointer;
   background-color: #fff;
@@ -51,15 +49,15 @@ label span {
   transition: background-color .5s ease;
 }
 
-label:first-child span {
+.mylabel:first-child span {
   border-radius: .375em 0 0 .375em;
 }
 
-label:last-child span {
+.mylabel:last-child span {
   border-radius: 0 .375em .375em 0;
 }
 
-        section {
+        #loginfloat {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             margin: 0;
@@ -69,7 +67,7 @@ label:last-child span {
             height: 100vh;
         }
 
-        .login-container {
+        .container {
             width: 300px;
             padding: 20px;
             background-color: #fff;
@@ -81,13 +79,13 @@ label:last-child span {
             margin-bottom: 20px;
         }
 
-        label {
+        .mylabel {
             display: block;
             margin-bottom: 8px;
             font-weight: bold;
         }
 
-        input {
+        .myinput {
             width: 100%;
             padding: 10px;
             box-sizing: border-box;
@@ -97,7 +95,7 @@ label:last-child span {
             margin-bottom: 15px;
         }
 
-        button {
+        .mybutton {
             background-color: #4caf50;
             color: white;
             padding: 10px 15px;
@@ -106,26 +104,26 @@ label:last-child span {
             cursor: pointer;
         }
 
-        button:hover {
+        .mybutton:hover {
             background-color: #45a049;
         }
     </style>
 </head>
-<section>
-    <div class="login-container">
+<body>
+    <div class="container">
         <!-- Login Form -->
     
         <div id="loginForm">
             <h2>Login</h2>
             <div class="form-group">
-                <label for="loginUsername">Username:</label>
-                <input type="text" id="loginUsername" placeholder="Enter your username">
+                <label class="mylabel" for="loginUsername">Username:</label>
+                <input class="myinput" type="text" id="loginUsername" placeholder="Enter your username">
             </div>
             <div class="form-group">
-                <label for="loginPassword">Password:</label>
-                <input type="password" id="loginPassword" placeholder="Enter your password">
+                <label class="mylabel" for="loginPassword">Password:</label>
+                <input class="myinput" type="password" id="loginPassword" placeholder="Enter your password">
             </div>
-            <button onclick="login()">Log in</button>
+            <button class="mybutton" onclick="login()">Log in</button>
             <p>Don't have an account? <a href="#" onclick="toggleForm()">Sign Up</a></p>
         </div>
 
@@ -133,14 +131,14 @@ label:last-child span {
         <div id="signupForm" style="display:none;">
             <h2>Sign Up</h2>
             <div class="form-group">
-                <label for="signupUsername">Username:</label>
-                <input type="text" id="signupUsername" placeholder="Choose a username">
+                <label class="mylabel" for="signupUsername">Username:</label>
+                <input class="myinput" type="text" id="signupUsername" placeholder="Choose a username">
             </div>
             <div class="form-group">
-                <label for="signupPassword">Password:</label>
-                <input type="password" id="signupPassword" placeholder="Choose a password">
+                <label class="mylabel" for="signupPassword">Password:</label>
+                <input class="myinput" type="password" id="signupPassword" placeholder="Choose a password">
             </div>
-            <button onclick="signup()">Sign Up</button>
+            <button class="mybutton" onclick="signup()">Sign Up</button>
             <p>Already have an account? <a href="#" onclick="toggleForm()">Log in</a></p>
         </div>
     </div>
@@ -183,6 +181,5 @@ label:last-child span {
         }
     </script>
     
-</section>
+</body>
 </html>
-
