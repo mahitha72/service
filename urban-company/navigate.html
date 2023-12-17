@@ -6,17 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Navigation with Radio Buttons</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
+        
 
-        .container {
+        .container-navigate {
             width: 300px;
             padding: 20px;
             background-color: #fff;
@@ -28,12 +20,12 @@
             margin-right: 8px;
         }
 
-        label {
+        .nav-label {
             display: block;
             margin-bottom: 8px;
         }
 
-        button {
+        #nav-button {
             background-color: #4caf50;
             color: white;
             padding: 10px 15px;
@@ -42,23 +34,23 @@
             cursor: pointer;
         }
 
-        button:hover {
+        #nav-button:hover {
             background-color: #45a049;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container-navigate">
         <h2>Select type of user:</h2>
         <div>
             <input type="radio" id="page1" name="page" value="page1">
-            <label for="page1">Customer</label>
+            <label for="page1" class="nav-label">Customer</label>
         </div>
         <div>
             <input type="radio" id="page2" name="page" value="page2">
-            <label for="page2">Service Provider</label>
+            <label for="page2" class="nav-label">Service Provider</label>
         </div>
-        <button onclick="navigate()">Go to Selected type</button>
+        <button onclick="navigate()" id="nav-button">Go to Selected type</button>
     </div>
 
     <script>

@@ -81,9 +81,9 @@ function login() {
   const username = document.getElementById("loginUsername").value;
   const password = document.getElementById("loginPassword").value;
   if (username === "admin" && password === "admin") {
-    window.location.href = "/urban-company/home.html";
+    document.getElementById("loginfloat").style.display = "none";
   } else {
-    console.log("Please verify Details");
+    alert("Please verify Details");
   }
 
   // Implement your login logic here
@@ -97,3 +97,67 @@ function signup() {
   // Implement your signup logic here
   console.log(`Sign Up - Username: ${username}, Password: ${password}`);
 }
+
+
+function login2() {
+            console.log('Login button clicked');
+            clearSignUpForm();
+            showLoginForm();
+        }
+
+        function toggleForm2() {
+            const loginForm = document.getElementById('loginForm2');
+            const signUpForm = document.getElementById('signUpForm');
+
+            loginForm.style.display = 'none';
+            signUpForm.style.display = 'block';
+        }
+
+        function signup2() {
+        const fullName = document.getElementById('fullName').value;
+        const email = document.getElementById('email').value;
+        const mobileNumber = document.getElementById('mobileNumber').value;
+        const city = document.getElementById('city').value;
+        const password = document.getElementById('password').value;
+        const gender = document.getElementById('gender').value;
+        const jobTitle = document.getElementById('jobTitle').value;
+        const typeOfService = document.getElementById('typeOfService').value;
+
+        console.log(`Sign Up - Full Name: ${fullName}, Email: ${email}, Mobile Number: ${mobileNumber}, City: ${city}, Password: ${password}, Gender: ${gender}, Job Title: ${jobTitle}, Type of Service: ${typeOfService}`);
+        }
+        function redirectToLogin() {
+            console.log('Redirecting to login page...');
+            clearSignUpForm();
+            showLoginForm();
+        }
+
+        function redirectToSignup() {
+            console.log('Redirecting to signup page...');
+            clearSignUpForm();
+            showSignUpForm();
+        }
+
+        function clearSignUpForm() {
+            const signUpForm = document.getElementById('signUpForm');
+            const formElements = signUpForm.getElementsByTagName('input');
+
+            for (let i = 0; i < formElements.length; i++) {
+                formElements[i].value = '';
+            }
+        }
+
+        function showLoginForm() {
+            const loginForm = document.getElementById('loginForm2');
+            const signUpForm = document.getElementById('signUpForm');
+
+            loginForm.style.display = 'block';
+            signUpForm.style.display = 'none';
+        }
+
+        function showSignUpForm() {
+            const loginForm = document.getElementById('loginForm2');
+            const signUpForm = document.getElementById('signUpForm');
+
+            loginForm.style.display = 'none';
+            signUpForm.style.display = 'block';
+        }

@@ -11,7 +11,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
 
 
@@ -53,7 +54,7 @@
                                 <p>Living Room Appliances</p>
                                 <ul class="mega-links">
                                     <li>
-                                        <a href="#" >Split Ac Repair & Service</a>
+                                        <a href="#">Split Ac Repair & Service</a>
                                     </li>
                                     <li>
                                         <a href="#">Window Ac Repair</a>
@@ -108,15 +109,16 @@
                 </div>
             </div>
             <div class="status">
-                <a href="cart-status.html" id="secondname"><img width="50px" height="50px" src="Asserts/delivery-status.png" alt=""></a>
+                <a href="cart-status.html" id="secondname"><img width="50px" height="50px"
+                        src="Asserts/delivery-status.png" alt=""></a>
             </div>
-            
+
             <div class="log">
                 <a href="#">Login</a>
             </div>
             <section id="loginfloat" class="login-section">
-                <div class="container-login">
-                    
+                <div class="container-login" id="login-id" style="visibility: hidden;">
+                
                     <div id="loginForm">
                         <h2>Login</h2>
                         <div class="form-group">
@@ -127,10 +129,10 @@
                             <label class="mylabel" for="loginPassword">Password:</label>
                             <input class="myinput" type="password" id="loginPassword" placeholder="Enter your password">
                         </div>
-                        <button class="mybutton" onclick="login()">Log in</button>
+                        <button class="mybutton mybutton1" onclick="login();close();">Log in</button>
                         <p>Don't have an account? <a href="#" onclick="toggleForm()">Sign Up</a></p>
                     </div>
-                    
+                
                     <div id="signupForm" style="display:none;">
                         <h2>Sign Up</h2>
                         <div class="form-group">
@@ -141,26 +143,148 @@
                             <label class="mylabel" for="signupPassword">Password:</label>
                             <input class="myinput" type="password" id="signupPassword" placeholder="Choose a password">
                         </div>
-                        <button class="mybutton" onclick="signup()">Sign Up</button>
+                        <button class="mybutton mybutton1" onclick="close();">Sign Up</button>
                         <p>Already have an account? <a href="#" onclick="toggleForm()">Log in</a></p>
                     </div>
                 </div>
+                <div class="container-navigate" id="navigate-2">
+                    <h2>Select type of user:</h2>
+                    <div>
+                        <input type="radio" id="page1" name="page" value="page1">
+                        <label for="page1" class="nav-label">Customer</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="page2" name="page" value="page2">
+                        <label for="page2" class="nav-label">Service Provider</label>
+                    </div>
+                    <button onclick="navigate()" id="nav-button">Go to Selected type</button>
+                </div>
+                <section id="body-psignup">
+                    <!-- Login Form -->
+                    <div class="container-1" id="loginForm2">
+                        <h2>Login</h2>
+                        <div class="form-group">
+                            <label for="loginEmail">Email:</label>
+                            <input type="email" id="loginEmail" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="loginPassword">Password:</label>
+                            <input type="password" id="loginPassword" placeholder="Enter your password">
+                        </div>
+                        <button class="mybutton1" onclick="login2();close();">Log in</button>
+                        <p>Don't have an account? <a href="#" onclick="toggleForm2()">Sign Up</a></p>
+                    </div>
+                    <!-- Sign Up Form -->
+                    <div class="container-2" id="signUpForm" style="display: none;">
+                        <h2>Professional Sign Up</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="fullName">Full Name:</label>
+                                <input type="text" id="fullName" placeholder="Enter your full name">
+                            </div>
+                            <div class="form-group">
+                                <label for="mobileNumber">Mobile Number:</label>
+                                <input type="number" min="6000000000" max="9999999999" id="mobileNumber"
+                                    placeholder="Enter your mobile number">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" placeholder="Enter your email">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" placeholder="Choose a password">
+                            </div>
+                            <div class="form-group">
+                                <label for="gender">Gender:</label>
+                                <select id="gender" name="gender">
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="others">Others</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="place">Place:</label>
+                                <select id="place" name="place">
+                                    <option value="bhimavaram">Bhimavaram</option>
+                                    <option value="narsapuram">Narsapuram</option>
+                                    <option value="palakollu">Palakollu</option>
+                                    <option value="tanuku">Tanuku</option>
+                                    <option value="tadepalligudem">Tadepalligudem</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="typeOfService">Type of Service Provided:</label>
+                                <select id="typeOfService" name="typeOfService">
+                                    <optgroup label="AC & Appliance Repair">
+                                        <option value="service2a">Air Conditioner</option>
+                                        <option value="service2b">TV's & Laptops</option>
+                                        <option value="service2c">Washing Machine</option>
+                                        <option value="service2d">Refrigerator</option>
+                                    </optgroup>
+                                    <optgroup label="Cleaning & Pest Control">
+                                        <option value="service3a">Home Cleaning</option>
+                                        <option value="service3b">Pest Control</option>
+                                    </optgroup>
+                                    <optgroup label="Household Repair">
+                                        <option value="service4a">Electrician</option>
+                                        <option value="service4b">Plumber</option>
+                                        <option value="service4c">Carpenter</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <button class="mybutton1" type="submit" onclick="close();">Sign Up</button>
+                            <p>Already have an account? <a href="#" onclick="redirectToLogin()">Log in</a></p>
+                        </form>
+                    </div>
+                </section> 
             </section>
+
 
 
             
             <script>
-                document.addEventListener('DOMContentLoaded', function() {
-                    var loginSection = document.getElementById('loginfloat');
-                    var loginLink = document.querySelector('.log a');
-            
-                    loginLink.addEventListener('click', function() {
-                        loginSection.classList.add('visible');
-                    });
-                });
-            </script>
-            
+                function navigate() {
+                    const selectedPage = document.querySelector('input[name="page"]:checked');
 
+                    if (selectedPage) {
+                        const pageValue = selectedPage.value;
+                        switch (pageValue) {
+                            case 'page1':
+                                document.getElementById('navigate-2').style.visibility = 'hidden';
+                                document.getElementById('body-psignup').style.visibility = 'hidden';
+                                document.getElementById('login-id').style.visibility = 'visible';
+                                break;
+                            case 'page2':
+                                document.getElementById('navigate-2').style.visibility = 'hidden';
+                                document.getElementById('login-id').style.visibility = 'hidden';
+                                document.getElementById('body-psignup').style.visibility = 'visible';
+                                break;
+                            default:
+                                console.log('Invalid page selection');
+                        }
+                    } else {
+                        alert('Please select a page before clicking "Go to Selected Page"');
+                    }
+                }
+               
+                    document.querySelector('.log a').addEventListener('click', function () {
+                        var loginSection = document.getElementById('loginfloat');
+                        loginSection.style.visibility = 'visible';
+                        document.getElementById('navigate-2').style.visibility = 'visible';
+                    });
+                    var buttons = document.querySelectorAll('.mybutton1');
+                    buttons.forEach(function (button) {
+                        button.addEventListener('click', function () {
+                            var loginSection = document.getElementById('loginfloat');
+                            loginSection.style.visibility = 'hidden';
+                             document.getElementById('navigate-2').style.visibility = 'hidden';
+                            document.getElementById('login-id').style.visibility = 'hidden';
+                            document.getElementById('body-psignup').style.visibility = 'hidden';
+                        });
+                    });
+
+            </script>
 
         </div>
     </header>
@@ -336,7 +460,7 @@
             </div>
 
         </div>
-        <div class="categories_button" >
+        <div class="categories_button">
             <a id="hidden_button" onclick="myfunction()" href="wasmachine.html" style="background-color: black;">Book
                 Now</a>
         </div>
@@ -435,7 +559,8 @@
         <script src="script.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-        <script type=" text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+        <script type=" text/javascript"
+            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
 </body>
 
 </html>
