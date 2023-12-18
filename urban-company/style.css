@@ -6,12 +6,13 @@
 }
 
 .navbar {
-  height: 80px;
+  height: 90px;
   background-color: #fff;
   color: #000;
   display: flex;
   position: sticky;
   width: auto;
+  border: none;
   box-shadow: 2px -4px 11px 0px black;
   justify-content: space-between;
 }
