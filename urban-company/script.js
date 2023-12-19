@@ -160,4 +160,15 @@ function login2() {
 
             loginForm.style.display = 'none';
             signUpForm.style.display = 'block';
-        }
+}
+function valfun(vID)
+{
+  var a = document.getElementById(vID).value;
+  b = /^[a-zA-Z0-9]+([\.-]?[a-zA-Z0-9]+)*@\w+([\.-]?(\w{2,3}))?(\.\w{2,3})$/;
+  if (b.test(a) == true) {
+    alert("valid email-id");
+  }
+  else {
+    alert("invalid email-id");
+  }
+}
