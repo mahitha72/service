@@ -103,7 +103,7 @@
 }
 .secondary-button {
   position: relative;
-  bottom: 50px;
+  bottom: -105px;
   border-radius: 100px;
   background: #f7941d;
   padding: 10px 15px;
@@ -111,8 +111,7 @@
   color: #fff;
   font-size: 14px;
   font-weight: 600;
-  left: 400px;
-  right: 0;
+  
   width: 75px;
   cursor: pointer;
 }

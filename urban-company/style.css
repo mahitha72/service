@@ -68,7 +68,7 @@
   background-color: white;
   display: flex;
   width: 900px;
-  height: 250px;
+  height: 300px;
   border-radius: 5px;
   /* box-shadow: 3.5px 1px 11px 0px black; */
   border: 0.01px solid rgba(0, 0, 0, 0.363);
@@ -175,19 +175,19 @@
   background-color: #fff;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
-  border: 1px solid black;
+  
   display: flex;
   position: absolute;
-  top: 380px;
+  top: 438px;
   width: 843px;
   height: 246px;
-  left: 300px;
+  left: 380px;
   visibility: hidden;
 }
 .categories_button {
   margin-top: -30px;
   position: relative;
-  margin-left: 590px;
+  margin-left: 680px;
 }
 
 .categories_button a {
@@ -245,6 +245,7 @@
   display: flex;
 }
 .carousel {
+  left: 80px;
   height: 246px;
   padding-top: 40px;
   border-radius: 5px;
@@ -547,7 +548,7 @@ ul {
 ul > li {
   margin: 20px;
 }
-.container {
+.container-value {
   position: absolute;
   width: 100px;
   height: 40px;
@@ -559,7 +560,7 @@ ul > li {
   border-radius: 45px;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
 }
-.container input[type="number"] {
+.container-value input[type="number"] {
   text-align: center;
   font-size: 20px;
   border: none;
@@ -575,7 +576,7 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-.container > button {
+.container-value > button {
   color: #fff;
   background-color: #111;
   border: none;
